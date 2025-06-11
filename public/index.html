@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-amber-50">
-    <div class="min-h-screen px-6 py-3">
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-16">
         <header class="flex justify-between">
             <div class="flex items-center justify-center gap-2">
                 <img src="Assets/Logo.svg" alt="">
@@ -21,7 +21,21 @@
         </header>
 
         <main>
+            <div class="flex items-center justify-center">
+                <img src="Assets/Blue Shape.svg" alt="" class="h-64 -rotate-45">
+                <img src="Assets/Pink Shape.svg" alt="" class="absolute h-64 -rotate-[30deg]"><!-- because of this absolute class the images are on top of each other-->
+                <img src="Assets/Purple Shape.svg" alt="" class="absolute h-64 -rotate-[15deg]">
+                <img src="Assets/Hero Image (Model).png" alt="" class="absolute h-64">
+            </div>
 
+            <div>
+                <h1 class="text-5xl font-bold leading-tight font-playfair">Host your website in less then 5 minutes.</h1><!-- leading-tight means the line height is tight, so there is some space between lines -->
+                <p>With Hosterr, get your website up and running in no less than 5 minutes with the most competitive pricing packages available online.</p>
+                <form actin="">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Join Waitlist</button>
+                </form>
+            </div>
         </main>
 
         <footer>
@@ -30,3 +44,14 @@
     </div>
 </body>
 </html>
+
+
+<!-- by absolute class
+
+So they are:
+
+Taken out of the normal flow
+
+Positioned at the same default position: top: 0; left: 0; (since you haven’t set custom positioning like top-10, left-20, etc.)
+
+As a result, they all overlap each other at the same spot. -->
