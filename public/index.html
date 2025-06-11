@@ -17,18 +17,18 @@
 
             <ul class="hidden lg:flex justify-between items-center font-lato text-gray-400 gap-6">
                 <li>
-                    <a href="#">Plans</a>
+                    <a href="#" class="hover:text-black">Plans</a>
                 </li>
                 <li>
-                    <a href="#">Find Domain</a>
+                    <a href="#" class="hover:text-black">Find Domain</a>
                 </li>
                 <li>
-                    <a href="#">Why Hosterr</a>
+                    <a href="#" class="hover:text-black">Why Hosterr</a>
                 </li>
             </ul>
 
             <div class="hidden lg:flex justify-center items-center font-lato gap-6">
-                <a href="#" class="text-gray-400 font-lato">Sign In</a>
+                <a href="#" class="text-gray-400 font-lato hover:text-black">Sign In</a>
                 <button class="btn">Join Waitlist</button>
             </div>
             <div class="lg:hidden">
@@ -36,15 +36,15 @@
             </div>
         </header>
 
-        <main>
-            <div class="flex items-center justify-center">
-                <img src="Assets/Blue Shape.svg" alt="" class="h-64 -rotate-45 md:h-72">
-                <img src="Assets/Pink Shape.svg" alt="" class="absolute h-64 -rotate-[30deg] md:h-72"><!-- because of this absolute class the images are on top of each other-->
-                <img src="Assets/Purple Shape.svg" alt="" class="absolute h-64 -rotate-[15deg] md:h-72">
-                <img src="Assets/Hero Image (Model).png" alt="" class="absolute h-64 md:h-72">
+        <main class="lg:flex">
+            <div class="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end"><!-- Use flex-1 to allow a flex item to grow and shrink as needed, ignoring its initial size-->
+                <img src="Assets/Blue Shape.svg" alt="" class="h-64 -rotate-45 md:h-72 lg:h-[550px]">
+                <img src="Assets/Pink Shape.svg" alt="" class="absolute h-64 -rotate-[30deg] md:h-72 lg:h-[550px]"><!-- because of this absolute class the images are on top of each other-->
+                <img src="Assets/Purple Shape.svg" alt="" class="absolute h-64 -rotate-[15deg] md:h-72 lg:h-[550px]">
+                <img src="Assets/Hero Image (Model).png" alt="" class="absolute h-64 md:h-72 lg:h-[550px]">
             </div>
 
-            <div class="space-y-4 mt-16">
+            <div class="space-y-4 mt-16 lg:flex-1 lg:order-1">
                 <h1 class="text-5xl font-bold leading-tight font-playfair">Host your website in less then 5 minutes.</h1><!-- leading-tight means the line height is tight, so there is some space between lines -->
                 <p class="font-lato text-gray-400">With Hosterr, get your website up and running in no less than 5 minutes with the most competitive pricing packages available online.</p>
                 <form action="" class="flex flex-col gap-4 md:flex-row">
